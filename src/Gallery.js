@@ -45,7 +45,7 @@ class Gallery extends React.Component {
         const promise = this.getImages();
     }
     render() {
-        const images = this.state.images.map((img) => (<a href="#"><img className="gallery__image" key={img.id} id={img.id} src={img.url} alt={img.id} onClick={this.handleModal} /></a>))
+        const images = this.state.images.map((img) => (<a href="#" key={img.id}><img className="gallery__image" id={img.id} src={img.url} alt={img.id} onClick={this.handleModal} /></a>))
         return (
             <div className="gallery">
                 {images}<br />
